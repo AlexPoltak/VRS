@@ -58,7 +58,7 @@ int main(void)
 
   	  	//Set mode for pin 4
   			GPIOA_MODER_REG &= ~(uint32_t)(0x3 << 8);
-  			GPIOA_MODER_REG &= ~(uint32_t)(1 << 8);
+  			GPIOA_MODER_REG |= (uint32_t)(1 << 8);
 
 
   /*GPIO OTYPER register*/
