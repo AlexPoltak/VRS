@@ -77,7 +77,7 @@ int main(void)
 
   while (1)
   {
-	  if(BUTTON_GET_STATE)
+	  if(!BUTTON_GET_STATE)
 	  {
 		  // 0.25s delay
 		  LL_mDelay(250);
